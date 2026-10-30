@@ -1,0 +1,25 @@
+{
+  "name": "jobs-module",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "description": "Message queues & background jobs: durable queue with leases and visibility timeouts, at-least-once delivery, deduplication, priority, delayed and recurring jobs, retry with jittered backoff, dead-letter and replay.",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": { "express": "^5.1.0", "zod": "^4.1.5" },
+  "devDependencies": {
+    "@types/express": "^5.0.3",
+    "@types/node": "^24.3.0",
+    "supertest": "^7.1.4",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
+  }
+}

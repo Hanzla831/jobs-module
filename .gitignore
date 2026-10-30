@@ -1,0 +1,13 @@
+node_modules/
+dist/
+coverage/
+*.log
+.env
+.env.local
+.DS_Store
+.vscode/
+.idea/
+
+# Deliverable copies, not part of the source repository
+background-jobs-queue.ts
+*.zip
